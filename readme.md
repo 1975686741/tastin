@@ -26,3 +26,45 @@
     1. 能不用定位就不要用定位
         定位会脱离文档流
     2. 在移动端多用弹性布局 
+    3. 选择器优先级
+        标签 1 < 类名 10 < id 100 < 计算表达式 
+        p.md2  11
+        p.md2 + div.md3  11 + 11
+        行内样式，优先级更高  少用
+        !important 最高  慎用
+    4. 弹性布局
+        移动端 flex 可以解决大部分问题
+        div  块级
+        布局的一种  跟外部不一样的布局
+        flex 内部  块级哪里丢失，默认不会换行    BFC Block formating context
+        
+
+
+- git 提交
+    1. 第一次git 命令行提交
+        全局配置  git config --global user.name "1975686741"
+        git config --global user.email "1975686741@qq.com" 
+
+- 滴滴swiper 多页滑动菜单功能
+        用户体验  less is more！ 摆在第一位
+        菜单太多，用户的密集恐惧症，把重要的放在首页
+        其他的可以多放一些
+        技术难度 
+    1. swiper > 2 swiper-item
+    2. swiper 高度 变化的 等高的
+        2行
+        4行的高度
+        swiper height  响应式的数据
+    3. class = "didi_menus {{'higher_menu'}}" 
+        {{}} 占位符 返回值是替换的值
+    4. swiper bindChange 事件
+        event 对象中
+        event.datail.current  当前是第几个swiper-item?
+        menu_type
+        this.setData()
+
+- 数据响应式编程
+    它是一个思想，有别于DOM编程API
+    设置一些页面效果，操作的不是DOM，
+    操作的是数据，因为数据一旦发生改变，页面会自动刷新
+1. 滴滴可变高度的首页菜单
