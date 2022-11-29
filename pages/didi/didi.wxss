@@ -1,0 +1,13 @@
+/* pages/didi/didi.wxss */
+/* swiper-item:first-child {
+    height: 200rpx;
+} */
+/* swiper-item:last-child {
+    height: 400rpx!important;
+} */
+.didi_menus {
+    height: 400rpx;
+}
+.higher_menus {
+    height: 800rpx;
+}
